@@ -584,11 +584,11 @@ com.instana.plugin.javatrace:
 #        - 'com.instana.frontend'
       targets:
         - match:
-            type: baseclass
-            name: javax.servlet.GenericServlet
-            method: service
+            type: class
+            name: org.eclipse.jetty.server.HttpChannel
+            method: handle
           span:
-            name: servlet
+            name: handle
             type: ENTRY
             stackDepth: 5
         - match:
