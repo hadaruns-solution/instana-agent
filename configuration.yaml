@@ -637,8 +637,8 @@ com.instana.plugin.httpd:
 #      poll_rate: 300 # Poll rate in seconds. Poll rate can not be lesser than 300 seconds. If it is configured below 300 seconds then default value (300 seconds) will be set.
 
 # Java Profiling
-#com.instana.plugin.profiling.java:
-#  enabled: false
+com.instana.plugin.profiling.java:
+  enabled: true
 
 # Prometheus
 #com.instana.plugin.prometheus:
@@ -793,11 +793,11 @@ com.instana.plugin.httpd:
 #    - 'x-loadtest-id'
 
 # Java Tracing
-#com.instana.plugin.javatrace:
-#  instrumentation:
+com.instana.plugin.javatrace:
+  instrumentation:
 #    # Lightweight Bytecode Instrumentation, enabled by default
 #    # Disabling currently requires an agent restart
-#    enabled: true
+    enabled: true
 #    # OpenTracing instrumentation, disabled by default
 #    # Enabling requires an agent restart
 #    opentracing: false
